@@ -1,0 +1,24 @@
+
+[package]
+name = "nexcore-dtree"
+description = "CART-inspired decision tree engine: trainable binary splitting with pluggable criteria"
+version = "1.0.0"
+edition = "2024"
+authors = ["NexVigilant Team <team@nexvigilant.com>"]
+license = "LicenseRef-Proprietary"
+rust-version = "1.85"
+
+[dependencies]
+nexcore-error = { workspace = true }
+nexcore-constants = { version = "1.0.0", path = "../nexcore-constants", registry = "nexcore" }
+nexcore-lex-primitiva = { version = "0.1.0", path = "../nexcore-lex-primitiva", registry = "nexcore" }
+stem-math = { version = "0.1.0", path = "../stem-math", registry = "nexcore" }
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = { version = "1.0.120" }
+
+[dev-dependencies]
+proptest = { version = "1.6.0" }
+
+
+[lints]
+workspace = true
